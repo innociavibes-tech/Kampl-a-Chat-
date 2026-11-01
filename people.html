@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People | Kampl'a Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body class="people-page">
+
+    <header class="people-header">
+        <div class="people-brand">
+            <div class="people-logo">K</div>
+            <div>
+                <h2>Kampl'a Chat</h2>
+                <p>Connect with people</p>
+            </div>
+        </div>
+
+        <button id="logoutBtn" class="logout-button">Logout</button>
+    </header>
+
+    <main class="people-container">
+
+        <section class="people-heading">
+            <h1>Discover People</h1>
+            <p>Find someone and start a conversation.</p>
+        </section>
+
+        <input
+            type="search"
+            id="searchUsers"
+            class="people-search"
+            placeholder="Search by name or username..."
+        >
+
+        <div class="people-count" id="peopleCount">
+            Loading people...
+        </div>
+
+        <section id="usersList" class="people-grid">
+            <p>Loading people...</p>
+        </section>
+
+    </main>
+
+    <script type="module" src="js/people.js"></script>
+
+</body>
+</html>
