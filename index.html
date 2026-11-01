@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kampl'a Chat</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <h2>Kampl'a Chat</h2>
+                <span>Private. Fast. Secure.</span>
+            </div>
+
+            <div class="user-profile">
+                <div class="avatar">U</div>
+                <div>
+                    <h3 id="username">Your Account</h3>
+                    <p>Online</p>
+                </div>
+            </div>
+
+            <div class="search">
+                <input type="text"
+                placeholder="Search conversations..."
+                id="searchInput">
+            </div>
+
+            <div class="menu">
+                <button class="active">💬 Chats</button>
+                <button>🟢 Updates</button>
+                <button>📞 Calls</button>
+                <button>👥 Communities</button>
+            </div>
+
+            <div class="chat-list">
+
+                <div class="chat-item" onclick="openChat('David')">
+                    <div class="avatar">D</div>
+                    <div class="chat-info">
+                        <h4>David</h4>
+                        <p>Hello, how are you?</p>
+                    </div>
+                    <span class="time">10:30</span>
+                </div>
+
+                <div class="chat-item" onclick="openChat('Sarah')">
+                    <div class="avatar">S</div>
+                    <div class="chat-info">
+                        <h4>Sarah</h4>
+                        <p>See you tomorrow!</p>
+                    </div>
+                    <span class="time">09:45</span>
+                </div>
+
+                <div class="chat-item" onclick="openChat('James')">
+                    <div class="avatar">J</div>
+                    <div class="chat-info">
+                        <h4>James</h4>
+                        <p>Thank you!</p>
+                    </div>
+                    <span class="time">Yesterday</span>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- CHAT AREA -->
+        <main class="chat-area">
+
+            <header class="chat-header">
+
+                <div class="avatar" id="chatAvatar">D</div>
+
+                <div>
+                    <h3 id="chatName">David</h3>
+                    <p>Online</p>
+                </div>
+
+            </header>
+
+
+            <section class="messages" id="messages">
+
+                <div class="message received">
+                    Hello! Welcome to Kampl'a Chat.
+                </div>
+
+                <div class="message sent">
+                    Thank you!
+                </div>
+
+                <div class="message received">
+                    How was your day?
+                </div>
+
+            </section>
+
+
+            <!-- MESSAGE INPUT -->
+            <footer class="message-input">
+
+                <button title="Attach file">＋</button>
+
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Type a message..."
+                >
+
+                <button onclick="sendMessage()" class="send-btn">
+                    ➤
+                </button>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+                          </html>
