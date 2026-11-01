@@ -168,3 +168,210 @@ form button {
     border: none;
     cursor: pointer;
 }
+/* KAMPLA CHAT DASHBOARD */
+
+.chat-page {
+    background: #06172d;
+    min-height: 100vh;
+    color: white;
+}
+
+.chat-header {
+    height: 75px;
+    background: #081f3a;
+    border-bottom: 1px solid #173b60;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand h2 {
+    font-size: 19px;
+    margin: 0;
+}
+
+.brand span {
+    font-size: 10px;
+    color: #75baff;
+}
+
+.small-logo {
+    width: 43px;
+    height: 43px;
+    background: #126bc0;
+    border-radius: 13px;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#logoutBtn {
+    padding: 10px 16px;
+    background: #123b65;
+    border: 1px solid #397bb5;
+    color: white;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.dashboard {
+    display: flex;
+    min-height: calc(100vh - 75px);
+}
+
+.sidebar {
+    width: 350px;
+    padding: 20px;
+    background: #091f39;
+    border-right: 1px solid #173b60;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #173b60;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    background: #126bc0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.profile h3 {
+    font-size: 15px;
+}
+
+.profile span {
+    color: #75baff;
+    font-size: 12px;
+}
+
+.section-title {
+    margin: 25px 0 15px;
+    font-size: 17px;
+}
+
+#searchUsers {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #244b73;
+    background: #102c4b;
+    color: white;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+#searchUsers::placeholder {
+    color: #91a9c4;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #173653;
+}
+
+.user-item:hover {
+    background: #12385f;
+}
+
+.user-avatar {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #126bc0;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+}
+
+.user-details h4 {
+    font-size: 14px;
+}
+
+.user-details p {
+    color: #91a9c4;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.loading {
+    color: #91a9c4;
+    font-size: 13px;
+    padding: 15px 0;
+}
+
+.conversation {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    padding: 25px;
+    text-align: center;
+}
+
+.empty-icon {
+    width: 85px;
+    height: 85px;
+    border-radius: 25px;
+    background: #123b65;
+    display: grid;
+    place-items: center;
+    font-size: 40px;
+    margin: 0 auto 20px;
+}
+
+.empty-chat h2 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.empty-chat p {
+    color: #91a9c4;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 350px;
+}
+
+@media (max-width: 700px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+    }
+
+    .conversation {
+        min-height: 300px;
+    }
+
+    .chat-header {
+        padding: 0 13px;
+    }
+
+    .brand h2 {
+        font-size: 16px;
+    }
+    }
