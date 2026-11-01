@@ -142,3 +142,29 @@ footer {
         margin: 20px 0;
     }
 }
+form {
+    width: 100%;
+    margin-top: 30px;
+}
+
+form input {
+    width: 100%;
+    padding: 17px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    border: 1px solid #245b8d;
+    background: #0b2340;
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+form input::placeholder {
+    color: #8ba9c9;
+}
+
+form button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
