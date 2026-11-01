@@ -62,6 +62,40 @@ async function loadUsers(currentUserId) {
 }
 
 function displayUsers(users) {
+    usersList.innerHTML = "";
+
+    if (users.length === 0) {
+        usersList.textContent = "No other users yet.";
+        return;
+    }
+
+    users.forEach(user => {
+        const item = document.createElement("div");
+        item.className = "user-item";
+
+        const avatar = document.createElement("div");
+        avatar.className = "user-avatar";
+        avatar.textContent = user.fullName.charAt(0).toUpperCase();
+
+        const details = document.createElement("div");
+        details.className = "user-details";
+
+        const name = document.createElement("h4");
+        name.textContent = user.fullName;
+
+        const username = document.createElement("p");
+        username.textContent = "@" + user.username;
+
+        details.append(name, username);
+        item.append(avatar, details);
+
+        item.addEventListener("click", () => {
+            openChatWindow(user);
+        });
+
+        usersList.appendChild(item);
+    });
+}
 
     usersList.innerHTML = "";
 
