@@ -92,8 +92,8 @@ function displayUsers(users) {
         item.append(avatar, details);
 
         item.addEventListener("click", () => {
-            alert("Contact selected: " + user.fullName +
-                  ". Real-time messaging is our next step!");
+    openChatWindow(user);
+});
         });
 
         usersList.appendChild(item);
