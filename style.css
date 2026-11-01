@@ -262,3 +262,62 @@ body {
     }
 
   }
+/* AUTHENTICATION */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background: #09264a;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.auth-box h1 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.auth-box h2 {
+    margin: 25px 0;
+}
+
+.auth-box p {
+    color: #a9bfd8;
+    margin-bottom: 15px;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #164a80;
+    border-radius: 8px;
+    background: #061426;
+    color: white;
+    outline: none;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 15px;
+    background: #164a80;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.auth-box a {
+    color: #55aaff;
+    text-decoration: none;
+    }
