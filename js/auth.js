@@ -48,7 +48,7 @@ if (registerForm) {
         try {
             showMessage("Creating your account...");
 
-            const internalEmail = username + "@kampla-chat.firebaseapp.com";
+            const internalEmail = username + "@kampalachat-firebaseapp.com";
 
             const result = await createUserWithEmailAndPassword(
                 auth,
