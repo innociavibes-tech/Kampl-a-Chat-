@@ -122,3 +122,48 @@ document.getElementById("logoutBtn").addEventListener("click", async () => {
     }
 
 });
+function openChatWindow(user) {
+
+    const conversation = document.getElementById("conversation");
+
+    conversation.innerHTML = `
+        <div class="active-chat">
+
+            <div class="active-chat-header">
+                <div class="avatar">
+                    ${user.fullName.charAt(0).toUpperCase()}
+                </div>
+
+                <div>
+                    <h3>${user.fullName}</h3>
+                    <p>@${user.username}</p>
+                </div>
+            </div>
+
+            <div class="chat-messages">
+                <p style="color:#91a9c4;text-align:center;">
+                    Your conversation with ${user.fullName} starts here.
+                </p>
+            </div>
+
+            <form class="message-form" id="messageForm">
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Write a message..."
+                    required
+                >
+
+                <button type="submit">Send</button>
+            </form>
+
+        </div>
+    `;
+
+    document.getElementById("messageForm")
+        .addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            alert("Message sending will be connected to Firebase next!");
+        });
+}
