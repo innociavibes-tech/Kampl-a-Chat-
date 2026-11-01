@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Chats | Kampl'a Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="chat-page">
+
+    <header class="chat-header">
+        <div class="brand">
+            <div class="small-logo">K</div>
+            <div>
+                <h2>Kampl'a Chat</h2>
+                <span>Private. Fast. Secure.</span>
+            </div>
+        </div>
+
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <main class="dashboard">
+
+        <section class="sidebar">
+
+            <div class="profile">
+                <div class="avatar" id="myAvatar">K</div>
+
+                <div>
+                    <h3 id="myName">Loading...</h3>
+                    <span id="myUsername">@username</span>
+                </div>
+            </div>
+
+            <h3 class="section-title">Messages</h3>
+
+            <input
+                type="search"
+                id="searchUsers"
+                placeholder="Search people..."
+            >
+
+            <div id="usersList">
+                <p class="loading">Loading people...</p>
+            </div>
+
+        </section>
+
+        <section class="conversation" id="conversation">
+
+            <div class="empty-chat">
+                <div class="empty-icon">✉</div>
+
+                <h2>Welcome to Kampl'a Chat</h2>
+
+                <p>
+                    Select someone from your contacts
+                    to start a conversation.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="js/chat.js"></script>
+
+</body>
+</html>
