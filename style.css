@@ -455,3 +455,148 @@ form button {
     border-radius: 10px;
     color: white;
 }
+/* KAMPLA CHAT PEOPLE PAGE */
+
+.people-page {
+    min-height: 100vh;
+    background: #071426;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.people-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+    background: #0d2038;
+    border-bottom: 1px solid #1b3553;
+}
+
+.people-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.people-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 14px;
+    background: #1685ff;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.people-brand h2 {
+    margin: 0;
+    font-size: 19px;
+}
+
+.people-brand p {
+    margin: 4px 0 0;
+    color: #9bb0c9;
+    font-size: 12px;
+}
+
+.logout-button {
+    background: #193653;
+    color: white;
+    border: 1px solid #34516e;
+    padding: 10px 17px;
+    border-radius: 9px;
+}
+
+.people-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+.people-heading h1 {
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+.people-heading p {
+    color: #9bb0c9;
+}
+
+.people-search {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 22px 0;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #294663;
+    background: #10243d;
+    color: white;
+    outline: none;
+}
+
+.people-search::placeholder {
+    color: #91a6bd;
+}
+
+.people-count {
+    color: #9bb0c9;
+    margin-bottom: 18px;
+}
+
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 17px;
+}
+
+.person-card {
+    background: #10243d;
+    border: 1px solid #25415e;
+    border-radius: 16px;
+    padding: 22px;
+    text-align: center;
+}
+
+.person-avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1685ff, #684cff);
+    display: grid;
+    place-items: center;
+    margin: 0 auto 14px;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.person-card h3 {
+    margin: 8px 0;
+}
+
+.person-card p {
+    color: #9bb0c9;
+    margin: 6px 0 12px;
+}
+
+.person-status {
+    display: block;
+    color: #9bb0c9;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+.person-status.online {
+    color: #35d58a;
+}
+
+.person-message-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 9px;
+    background: #1685ff;
+    color: white;
+    font-weight: bold;
+    }
